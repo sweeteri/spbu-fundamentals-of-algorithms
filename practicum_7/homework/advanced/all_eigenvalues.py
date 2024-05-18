@@ -6,13 +6,14 @@ import time as tm
 
 
 import numpy as np
+from numpy.typing import NDArray
+
 import scipy.io
 import scipy.linalg
 
-from src.common import NDArrayFloat
 from src.linalg import get_numpy_eigenvalues
 
-
+NDArrayFloat = NDArray[np.float_]
 @dataclass
 class Performance:
     time: float = 0.0
